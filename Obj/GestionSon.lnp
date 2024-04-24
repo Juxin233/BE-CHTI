@@ -1,0 +1,11 @@
+--cpu Cortex-M3
+".\obj\principal.o"
+".\obj\gestionson.o"
+".\obj\bruitverre.o"
+".\Driver\DriverJeuLaser.lib"
+".\obj\servicejeulaser.o"
+".\obj\startup-rvds.o"
+--library_type=microlib --strict --scatter ".\Obj\GestionSon.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "GestionSon.map" -o .\Obj\GestionSon.axf
