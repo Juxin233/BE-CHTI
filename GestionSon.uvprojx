@@ -403,6 +403,11 @@
               <FileType>2</FileType>
               <FilePath>.\GestionSon\bruitverre.asm</FilePath>
             </File>
+            <File>
+              <FileName>GestionSon.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\GestionSon.h</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>
@@ -900,6 +905,11 @@
               <FileName>bruitverre.asm</FileName>
               <FileType>2</FileType>
               <FilePath>.\GestionSon\bruitverre.asm</FilePath>
+            </File>
+            <File>
+              <FileName>GestionSon.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\GestionSon.h</FilePath>
             </File>
           </Files>
         </Group>

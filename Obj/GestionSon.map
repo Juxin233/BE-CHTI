@@ -308,8 +308,8 @@ Image Symbol Table
     i.__scatterload_null                     0x08000a9a   Section        2  handlers.o(i.__scatterload_null)
     i.__scatterload_zeroinit                 0x08000a9c   Section       14  handlers.o(i.__scatterload_zeroinit)
     i.main                                   0x08000aac   Section        0  principal.o(i.main)
-    moncode                                  0x08000ac8   Section       84  gestionson.o(moncode)
-    SecSon                                   0x08000b3c   Section    11032  bruitverre.o(SecSon)
+    moncode                                  0x08000ac8   Section      124  gestionson.o(moncode)
+    SecSon                                   0x08000b64   Section    11032  bruitverre.o(SecSon)
     .data                                    0x20000000   Section      160  timer_1234.o(.data)
     Ptr_TIM1                                 0x20000010   Data           4  timer_1234.o(.data)
     Ptr_TIM2                                 0x20000014   Data           4  timer_1234.o(.data)
@@ -438,12 +438,13 @@ Image Symbol Table
     __scatterload_null                       0x08000a9b   Thumb Code     2  handlers.o(i.__scatterload_null)
     __scatterload_zeroinit                   0x08000a9d   Thumb Code    14  handlers.o(i.__scatterload_zeroinit)
     main                                     0x08000aad   Thumb Code    20  principal.o(i.main)
-    GestionSon_callback                      0x08000ac9   Thumb Code    66  gestionson.o(moncode)
-    Region$$Table$$Base                      0x08000b1c   Number         0  anon$$obj.o(Region$$Table)
-    LongueurSon                              0x08000b3c   Data           4  bruitverre.o(SecSon)
-    Region$$Table$$Limit                     0x08000b3c   Number         0  anon$$obj.o(Region$$Table)
-    PeriodeSonMicroSec                       0x08000b40   Data           4  bruitverre.o(SecSon)
-    Son                                      0x08000b44   Data           0  bruitverre.o(SecSon)
+    GestionSon_Start                         0x08000ac9   Thumb Code    18  gestionson.o(moncode)
+    GestionSon_callback                      0x08000af1   Thumb Code    66  gestionson.o(moncode)
+    Region$$Table$$Base                      0x08000b44   Number         0  anon$$obj.o(Region$$Table)
+    LongueurSon                              0x08000b64   Data           4  bruitverre.o(SecSon)
+    Region$$Table$$Limit                     0x08000b64   Number         0  anon$$obj.o(Region$$Table)
+    PeriodeSonMicroSec                       0x08000b68   Data           4  bruitverre.o(SecSon)
+    Son                                      0x08000b6c   Data           0  bruitverre.o(SecSon)
     Enable_Fct_IT_Compare_Match_TIM1_Voie1   0x20000000   Data           1  timer_1234.o(.data)
     Enable_Fct_IT_Compare_Match_TIM1_Voie2   0x20000001   Data           1  timer_1234.o(.data)
     Enable_Fct_IT_Compare_Match_TIM1_Voie3   0x20000002   Data           1  timer_1234.o(.data)
@@ -472,9 +473,9 @@ Memory Map of the image
 
   Image Entry point : 0x080000ed
 
-  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003700, Max: 0x00020000, ABSOLUTE)
+  Load Region LR_IROM1 (Base: 0x08000000, Size: 0x00003728, Max: 0x00020000, ABSOLUTE)
 
-    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x00003654, Max: 0x00020000, ABSOLUTE)
+    Execution Region ER_IROM1 (Exec base: 0x08000000, Load base: 0x08000000, Size: 0x0000367c, Max: 0x00020000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
@@ -512,19 +513,19 @@ Memory Map of the image
     0x08000a9c   0x08000a9c   0x0000000e   Code   RO          317    i.__scatterload_zeroinit  mc_w.l(handlers.o)
     0x08000aaa   0x08000aaa   0x00000002   PAD
     0x08000aac   0x08000aac   0x0000001c   Code   RO            4    i.main              principal.o
-    0x08000ac8   0x08000ac8   0x00000054   Code   RO           66    moncode             gestionson.o
-    0x08000b1c   0x08000b1c   0x00000020   Data   RO          313    Region$$Table       anon$$obj.o
-    0x08000b3c   0x08000b3c   0x00002b18   Data   RO           70    SecSon              bruitverre.o
+    0x08000ac8   0x08000ac8   0x0000007c   Code   RO           66    moncode             gestionson.o
+    0x08000b44   0x08000b44   0x00000020   Data   RO          313    Region$$Table       anon$$obj.o
+    0x08000b64   0x08000b64   0x00002b18   Data   RO           70    SecSon              bruitverre.o
 
 
-    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x08003654, Size: 0x000004b0, Max: 0x00005000, ABSOLUTE)
+    Execution Region RW_IRAM1 (Exec base: 0x20000000, Load base: 0x0800367c, Size: 0x000004b0, Max: 0x00005000, ABSOLUTE)
 
     Exec Addr    Load Addr    Size         Type   Attr      Idx    E Section Name        Object
 
-    0x20000000   0x08003654   0x000000a0   Data   RW          222    .data               DriverJeuLaser.lib(timer_1234.o)
-    0x200000a0   0x080036f4   0x00000004   Data   RW          249    .data               DriverJeuLaser.lib(timer_systick.o)
-    0x200000a4   0x080036f8   0x00000008   Data   RW           65    maram               gestionson.o
-    0x200000ac   0x08003700   0x00000004   PAD
+    0x20000000   0x0800367c   0x000000a0   Data   RW          222    .data               DriverJeuLaser.lib(timer_1234.o)
+    0x200000a0   0x0800371c   0x00000004   Data   RW          249    .data               DriverJeuLaser.lib(timer_systick.o)
+    0x200000a4   0x08003720   0x00000008   Data   RW           65    maram               gestionson.o
+    0x200000ac   0x08003728   0x00000004   PAD
     0x200000b0        -       0x00000400   Zero   RW          125    STACK               startup-rvds.o
 
 
@@ -536,13 +537,13 @@ Image component sizes
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   Object Name
 
          0          0      11032          0          0          0   bruitverre.o
-        84         18          0          8          0        348   gestionson.o
-        28          8          0          0          0     206783   principal.o
+       124         18          0          8          0        452   gestionson.o
+        28          8          0          0          0     206779   principal.o
         76         14          0          0          0        656   servicejeulaser.o
         76         20        236          0       1024        796   startup-rvds.o
 
     ----------------------------------------------------------------------
-       264         60      11300          8       1028     208583   Object Totals
+       304         60      11300          8       1028     208683   Object Totals
          0          0         32          0          0          0   (incl. Generated)
          0          0          0          0          4          0   (incl. Padding)
 
@@ -587,15 +588,15 @@ Image component sizes
 
       Code (inc. data)   RO Data    RW Data    ZI Data      Debug   
 
-      2608        286      11300        172       1028     209251   Grand Totals
-      2608        286      11300        172       1028     209251   ELF Image Totals
-      2608        286      11300        172          0          0   ROM Totals
+      2648        286      11300        172       1028     209351   Grand Totals
+      2648        286      11300        172       1028     209351   ELF Image Totals
+      2648        286      11300        172          0          0   ROM Totals
 
 ==============================================================================
 
-    Total RO  Size (Code + RO Data)                13908 (  13.58kB)
+    Total RO  Size (Code + RO Data)                13948 (  13.62kB)
     Total RW  Size (RW Data + ZI Data)              1200 (   1.17kB)
-    Total ROM Size (Code + RO Data + RW Data)      14080 (  13.75kB)
+    Total ROM Size (Code + RO Data + RW Data)      14120 (  13.79kB)
 
 ==============================================================================
 

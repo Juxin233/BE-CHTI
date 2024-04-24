@@ -10,7 +10,8 @@
 
 short int SotieSon;
 void GestionSon_callback(void);
-
+void GestionSon_Start(void);
+void GestionSon_Stop(void);
 extern int PeriodeSonMicroSec;
 int main(void)
 {
@@ -24,8 +25,9 @@ CLOCK_Configure();
 
 /* Configuration du son (voir ServiceJeuLaser.h) 
  Insérez votre code d'initialisation des parties matérielles gérant le son ....*/	
-ServJeuLASER_Son_Init(PeriodeSonMicroSec, 1, GestionSon_callback);
-
+	//GestionSon_Start();
+	ServJeuLASER_Son_Init(PeriodeSonMicroSec, 1, GestionSon_callback);
+	//ServJeuLASER_Son_Init(PeriodeSonMicroSec*2756,2,GestionSon_Start);
 	
 	
 
