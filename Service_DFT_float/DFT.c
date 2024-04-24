@@ -17,12 +17,3 @@ float dft(float * Sig, int k){
 	return (Re*Re) + (Im*Im);
 	
 }
-
-int main(){
-	float res[64]; 
-	for(int k = 0; k < 64; k++){
-		res[k] = dft(LeSignal,k);
-		printf("%f\n", res[k]);
-	}
-	return 0;
-}

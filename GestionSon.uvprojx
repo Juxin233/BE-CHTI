@@ -403,11 +403,6 @@
               <FileType>2</FileType>
               <FilePath>.\GestionSon\bruitverre.asm</FilePath>
             </File>
-            <File>
-              <FileName>GestionSon.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\GestionSon.h</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -452,11 +447,6 @@
               <FileName>DFT.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Service_DFT_float\DFT.c</FilePath>
-            </File>
-            <File>
-              <FileName>DFT.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Service_DFT_float\DFT.h</FilePath>
             </File>
           </Files>
         </Group>
@@ -867,7 +857,7 @@
               <MiscControls>--C99</MiscControls>
               <Define>STM32F103xB,USE_FULL_LL_DRIVER</Define>
               <Undefine></Undefine>
-              <IncludePath>.\Driver</IncludePath>
+              <IncludePath>.\Driver;.\Service_DFT_float</IncludePath>
             </VariousControls>
           </Cads>
           <Aads>
@@ -931,11 +921,6 @@
               <FileType>2</FileType>
               <FilePath>.\GestionSon\bruitverre.asm</FilePath>
             </File>
-            <File>
-              <FileName>GestionSon.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\GestionSon.h</FilePath>
-            </File>
           </Files>
         </Group>
         <Group>
@@ -980,11 +965,6 @@
               <FileName>DFT.c</FileName>
               <FileType>1</FileType>
               <FilePath>.\Service_DFT_float\DFT.c</FilePath>
-            </File>
-            <File>
-              <FileName>DFT.h</FileName>
-              <FileType>5</FileType>
-              <FilePath>.\Service_DFT_float\DFT.h</FilePath>
             </File>
           </Files>
         </Group>

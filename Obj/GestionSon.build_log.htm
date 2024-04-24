@@ -34,21 +34,15 @@ compiling CosSin_float.c...
 compiling Signal_float.c...
 assembling bruitverre.asm...
 compiling DFT.c...
-Service_DFT_float\DFT.c(28): warning:  #1-D: last line of file ends without a newline
-  }
-Service_DFT_float\DFT.c: 1 warning, 0 errors
 compiling principal.c...
-Principal\../Service_DFT_float/DFT.h(8): warning:  #1-D: last line of file ends without a newline
-  #endif // DFT_H
+Principal\principal.c(36): warning:  #550-D: variable "res"  was set but never used
+  float res[64]; 
 Principal\principal.c: 1 warning, 0 errors
 compiling ServiceJeuLaser.c...
 linking...
-.\Obj\GestionSon.axf: Error: L6200E: Symbol __ARM_use_no_argv multiply defined (by dft.o and principal.o).
-.\Obj\GestionSon.axf: Error: L6200E: Symbol main multiply defined (by dft.o and principal.o).
-Not enough information to list image symbols.
-Not enough information to list load addresses in the image map.
-Finished: 2 information, 0 warning and 2 error messages.
-".\Obj\GestionSon.axf" - 2 Error(s), 3 Warning(s).
+Program Size: Code=3280 RO-data=11300 RW-data=940 ZI-data=1028  
+FromELF: creating hex file...
+".\Obj\GestionSon.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -71,8 +65,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.4.0
-Target not created.
-Build Time Elapsed:  00:00:01
+Build Time Elapsed:  00:00:02
 </pre>
 </body>
 </html>

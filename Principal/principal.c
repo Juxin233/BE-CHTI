@@ -3,7 +3,7 @@
 #include "DriverJeuLaser.h"
 #include "ServiceJeuLaser.h"
 #include "../Service_DFT_float/DFT.h"
-
+#include "Signal_float.h"
 //void hello(){
 	//static int a;
 	//a++;
@@ -33,7 +33,10 @@ CLOCK_Configure();
 	
 
 //============================================================================	
-	
+float res[64]; 
+for(int k = 0; k < 64; k++){
+		res[k] = dft(LeSignal,k);
+	}
 	
 while	(1)
 	{
