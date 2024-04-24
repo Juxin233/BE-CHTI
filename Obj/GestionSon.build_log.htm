@@ -26,11 +26,29 @@ Project File Date:  04/24/2024
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 7 (build 960)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
-Build target 'Simu'
+Rebuild target 'Simu'
+assembling GestionSon.s...
+GestionSon\GestionSon.s(118): warning: A1581W: Added 2 bytes of padding at address 0x6a
+assembling startup-rvds.s...
+compiling CosSin_float.c...
+compiling Signal_float.c...
+assembling bruitverre.asm...
+compiling DFT.c...
+Service_DFT_float\DFT.c(28): warning:  #1-D: last line of file ends without a newline
+  }
+Service_DFT_float\DFT.c: 1 warning, 0 errors
+compiling principal.c...
+Principal\../Service_DFT_float/DFT.h(8): warning:  #1-D: last line of file ends without a newline
+  #endif // DFT_H
+Principal\principal.c: 1 warning, 0 errors
+compiling ServiceJeuLaser.c...
 linking...
-Program Size: Code=2648 RO-data=11300 RW-data=172 ZI-data=1028  
-FromELF: creating hex file...
-".\Obj\GestionSon.axf" - 0 Error(s), 0 Warning(s).
+.\Obj\GestionSon.axf: Error: L6200E: Symbol __ARM_use_no_argv multiply defined (by dft.o and principal.o).
+.\Obj\GestionSon.axf: Error: L6200E: Symbol main multiply defined (by dft.o and principal.o).
+Not enough information to list image symbols.
+Not enough information to list load addresses in the image map.
+Finished: 2 information, 0 warning and 2 error messages.
+".\Obj\GestionSon.axf" - 2 Error(s), 3 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -53,6 +71,7 @@ Package Vendor: Keil
 <h2>Collection of Component Files used:</h2>
 
    * Component: ARM::CMSIS:CORE:5.4.0
+Target not created.
 Build Time Elapsed:  00:00:01
 </pre>
 </body>

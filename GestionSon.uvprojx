@@ -436,6 +436,31 @@
           </Files>
         </Group>
         <Group>
+          <GroupName>ServiceDFT</GroupName>
+          <Files>
+            <File>
+              <FileName>Signal_float.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Service_DFT_float\Signal_float.c</FilePath>
+            </File>
+            <File>
+              <FileName>CosSin_float.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Service_DFT_float\CosSin_float.c</FilePath>
+            </File>
+            <File>
+              <FileName>DFT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Service_DFT_float\DFT.c</FilePath>
+            </File>
+            <File>
+              <FileName>DFT.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Service_DFT_float\DFT.h</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
           <GroupName>::CMSIS</GroupName>
           <GroupOption>
             <CommonProperty>
@@ -935,6 +960,31 @@
               <FileName>startup-rvds.s</FileName>
               <FileType>2</FileType>
               <FilePath>.\System\startup-rvds.s</FilePath>
+            </File>
+          </Files>
+        </Group>
+        <Group>
+          <GroupName>ServiceDFT</GroupName>
+          <Files>
+            <File>
+              <FileName>Signal_float.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Service_DFT_float\Signal_float.c</FilePath>
+            </File>
+            <File>
+              <FileName>CosSin_float.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Service_DFT_float\CosSin_float.c</FilePath>
+            </File>
+            <File>
+              <FileName>DFT.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>.\Service_DFT_float\DFT.c</FilePath>
+            </File>
+            <File>
+              <FileName>DFT.h</FileName>
+              <FileType>5</FileType>
+              <FilePath>.\Service_DFT_float\DFT.h</FilePath>
             </File>
           </Files>
         </Group>
