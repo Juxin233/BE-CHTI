@@ -15,5 +15,5 @@ float dft(float * Sig, int k){
 		Im -= Sig[i]*TabSin[j];
 	}
 	return (Re*Re) + (Im*Im);
-	
 }
+

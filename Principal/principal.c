@@ -1,9 +1,13 @@
 
-
+#include <stdio.h>
+#include <stdlib.h>
 #include "DriverJeuLaser.h"
 #include "ServiceJeuLaser.h"
 #include "../Service_DFT_float/DFT.h"
 #include "Signal_float.h"
+#include "DFT.h"
+#include <time.h>
+
 //void hello(){
 	//static int a;
 	//a++;
@@ -14,6 +18,7 @@ void GestionSon_callback(void);
 void GestionSon_Start(void);
 void GestionSon_Stop(void);
 extern int PeriodeSonMicroSec;
+float res[64]; 
 int main(void)
 {
 
@@ -31,12 +36,16 @@ CLOCK_Configure();
 	//ServJeuLASER_Son_Init(PeriodeSonMicroSec*2756,2,GestionSon_Start);
 	
 	
+	
+	for(int k = 0; k < 64; k++){
+		res[k] = dft(LeSignal,k);
+	
+	}
+	
 
 //============================================================================	
-float res[64]; 
-for(int k = 0; k < 64; k++){
-		res[k] = dft(LeSignal,k);
-	}
+
+
 	
 while	(1)
 	{

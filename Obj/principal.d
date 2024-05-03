@@ -1,4 +1,6 @@
 .\obj\principal.o: Principal\principal.c
+.\obj\principal.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\obj\principal.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
 .\obj\principal.o: .\Driver\DriverJeuLaser.h
 .\obj\principal.o: C:\Programdata\Keil\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\stm32f10x.h
 .\obj\principal.o: .\RTE\_Simu\RTE_Components.h
@@ -11,3 +13,4 @@
 .\obj\principal.o: .\Driver\ServiceJeuLaser.h
 .\obj\principal.o: Principal\../Service_DFT_float/DFT.h
 .\obj\principal.o: .\Service_DFT_float\Signal_float.h
+.\obj\principal.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
