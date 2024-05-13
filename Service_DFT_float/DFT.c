@@ -1,19 +1,19 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include <float.h>
-#include "Signal_float.h"
-#include "CosSin_float.h"
+#include "CosSin_Fract_1_15.h"
 
 
-float dft(float * Sig, int k){
+
+unsigned int dft(unsigned short * Sig, short k){
 	int M = 64;
-	float Re;
-	float Im;
+	long long  Re=0; //64 bits
+	long long	 Im=0; //64 bits
 	for (int i =0;i<M;i++){
-		int j=i*k%M;
-		Re += Sig[i]*TabCos[j];
-		Im -= Sig[i]*TabSin[j];
+		short j=(i*k)%M;
+		Re += Sig[i]*TabCos[j];// Sig //4_12 *Cos//1_15 -> Re //5_27
+		Im -= Sig[i]*TabSin[j];// Sig //4_12 *Cos//1_15 -> Im //5_27
 	}
-	return (Re*Re) + (Im*Im);
+	//Re*Re/5_27*5_27-> 10_54 >>32 -> 10_22 
+	return ((Re*Re + Im*Im)>>32);
 }
 

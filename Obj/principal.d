@@ -11,6 +11,5 @@
 .\obj\principal.o: C:\Programdata\Keil\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
 .\obj\principal.o: C:\Programdata\Keil\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include\system_stm32f10x.h
 .\obj\principal.o: .\Driver\ServiceJeuLaser.h
-.\obj\principal.o: Principal\../Service_DFT_float/DFT.h
-.\obj\principal.o: .\Service_DFT_float\Signal_float.h
-.\obj\principal.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\time.h
+.\obj\principal.o: .\Service_DFT_float\DFT.h
+.\obj\principal.o: .\Service_DFT_Fract\Signal_4_12.h

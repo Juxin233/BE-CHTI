@@ -1,8 +1,8 @@
 #ifndef DFT_H
 #define DFT_H
 
-float dft(float * Sig, int k);
 
+unsigned int dft(unsigned short * Sig, short k);
 
 
 #endif // DFT_H

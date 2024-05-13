@@ -350,9 +350,9 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>50</LineNumber>
+          <LineNumber>48</LineNumber>
           <EnabledFlag>1</EnabledFlag>
-          <Address>134221104</Address>
+          <Address>134220632</Address>
           <ByteObject>0</ByteObject>
           <HtxType>0</HtxType>
           <ManyObjects>0</ManyObjects>
@@ -361,12 +361,12 @@
           <BreakIfRCount>1</BreakIfRCount>
           <Filename>.\Principal\principal.c</Filename>
           <ExecCommand></ExecCommand>
-          <Expression>\\GestionSon\Principal/principal.c\50</Expression>
+          <Expression>\\GestionSon\Principal/principal.c\48</Expression>
         </Bp>
         <Bp>
           <Number>1</Number>
           <Type>0</Type>
-          <LineNumber>49</LineNumber>
+          <LineNumber>50</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>0</Address>
           <ByteObject>0</ByteObject>
@@ -404,7 +404,7 @@
         <Ww>
           <count>4</count>
           <WinNumber>1</WinNumber>
-          <ItemText>res</ItemText>
+          <ItemText>res,0x0A</ItemText>
         </Ww>
       </WatchWindow1>
       <WatchWindow2>
@@ -605,35 +605,47 @@
       <GroupNumber>5</GroupNumber>
       <FileNumber>7</FileNumber>
       <FileType>1</FileType>
-      <tvExp>0</tvExp>
+      <tvExp>1</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\Service_DFT_float\Signal_float.c</PathWithFileName>
-      <FilenameWithoutPath>Signal_float.c</FilenameWithoutPath>
+      <PathWithFileName>.\Service_DFT_float\DFT.c</PathWithFileName>
+      <FilenameWithoutPath>DFT.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>5</GroupNumber>
       <FileNumber>8</FileNumber>
-      <FileType>1</FileType>
+      <FileType>2</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\Service_DFT_float\CosSin_float.c</PathWithFileName>
-      <FilenameWithoutPath>CosSin_float.c</FilenameWithoutPath>
+      <PathWithFileName>.\Service_DFT_Fract\CosSin_Fract_1_15.asm</PathWithFileName>
+      <FilenameWithoutPath>CosSin_Fract_1_15.asm</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
     <File>
       <GroupNumber>5</GroupNumber>
       <FileNumber>9</FileNumber>
-      <FileType>1</FileType>
-      <tvExp>1</tvExp>
+      <FileType>2</FileType>
+      <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>
       <bDave2>0</bDave2>
-      <PathWithFileName>.\Service_DFT_float\DFT.c</PathWithFileName>
-      <FilenameWithoutPath>DFT.c</FilenameWithoutPath>
+      <PathWithFileName>.\Service_DFT_Fract\Signal_4_12.asm</PathWithFileName>
+      <FilenameWithoutPath>Signal_4_12.asm</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
+    <File>
+      <GroupNumber>5</GroupNumber>
+      <FileNumber>10</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>0</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\Service_DFT_float\Signal_float.c</PathWithFileName>
+      <FilenameWithoutPath>Signal_float.c</FilenameWithoutPath>
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>

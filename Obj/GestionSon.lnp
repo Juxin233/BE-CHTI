@@ -5,9 +5,10 @@
 ".\Driver\DriverJeuLaser.lib"
 ".\obj\servicejeulaser.o"
 ".\obj\startup-rvds.o"
-".\obj\signal_float.o"
-".\obj\cossin_float.o"
 ".\obj\dft.o"
+".\obj\cossin_fract_1_15.o"
+".\obj\signal_4_12.o"
+".\obj\signal_float.o"
 --library_type=microlib --strict --scatter ".\Obj\GestionSon.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
