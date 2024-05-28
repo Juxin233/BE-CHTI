@@ -2,7 +2,7 @@
 #define DFT_H
 
 
-unsigned int dft(unsigned short * Sig, short k);
+unsigned int dft(short * Sig, short k);
 
 
 #endif // DFT_H

@@ -4,7 +4,7 @@
 
 
 
-unsigned int dft(unsigned short * Sig, short k){
+unsigned int dft(short * Sig, short k){
 	int M = 64;
 	long long  Re=0; //64 bits
 	long long	 Im=0; //64 bits
