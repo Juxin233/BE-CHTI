@@ -302,8 +302,8 @@ ARM Macro Assembler    Page 5
   144 00000100         
   145 00000100                 END
 Command Line: --debug --xref --diag_suppress=9931 --cpu=Cortex-M3 --apcs=interw
-ork --depend=.\obj\cossin_fract_1_15.d -o.\obj\cossin_fract_1_15.o -I.\RTE\_Sim
-u -IC:\Programdata\Keil\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include -IC:\Progr
+ork --depend=.\obj\cossin_fract_1_15.d -o.\obj\cossin_fract_1_15.o -I.\RTE\_ree
+l -IC:\Programdata\Keil\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include -IC:\Progr
 amdata\Keil\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include --predefine="__EV
 AL SETA 1" --predefine="__MICROLIB SETA 1" --predefine="__UVISION_VERSION SETA 
 534" --predefine="_RTE_ SETA 1" --predefine="STM32F10X_MD SETA 1" --predefine="

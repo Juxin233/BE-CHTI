@@ -9,6 +9,7 @@
 ".\obj\cossin_fract_1_15.o"
 ".\obj\signal_4_12.o"
 ".\obj\signal_float.o"
+".\ModuleAffichage\ModuleAffichage\affichage_valise.o"
 --library_type=microlib --strict --scatter ".\Obj\GestionSon.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers

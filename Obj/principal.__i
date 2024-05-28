@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -D__EVAL -D__MICROLIB -g -O0 --apcs=interwork --split_sections -I .\Driver -I .\Service_DFT_float -I .\Service_DFT_Fract -I .\ModuleAffichage\ModuleAffichage --C99
+-I.\RTE\_reel
+-IC:\Programdata\Keil\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include
+-IC:\Programdata\Keil\Arm\Packs\Keil\STM32F1xx_DFP\2.3.0\Device\Include
+-D__UVISION_VERSION="534" -D_RTE_ -DSTM32F10X_MD -D_RTE_ -DSTM32F103xB -DUSE_FULL_LL_DRIVER
+-o .\obj\principal.o --omf_browse .\obj\principal.crf --depend .\obj\principal.d "Principal\principal.c"
